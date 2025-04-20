@@ -1,0 +1,61 @@
+﻿important test not covered yet!
+
+- NotifyProjector  ==> storing projector command, checkpoint and event seen should be done in one transaction
+- how to deal with failuer in projectors.
+
+
+
+
+
+
+
+
+
+
+
+
+load event stream wich doe's not exists
+Append events to an event stream wich hasn't been created yet.
+Create event stream per aggregate instances
+Increment Event stream version after each Appending...
+Append a collection of events in order to an event stream
+Local position on an event in event stream
+Assign a unique id to each event in event stores
+Load event stream by version id
+Load max events of an event stream and skip some events from the start
+Append events to an event stream wich has been created before.
+Load event stream between from and to date
+Load a single event frome specific event stream by event number(position)
+Load a single event frome specific event stream by event id
+Load a single event frome event stream by event number(position)
+Load a single event frome event stream by event number
+Load all events forward
+Load all events backwad
+Volatile subscriptions
+Catch-up Subscriptions
+Subscribing to all event stores
+save checkpoint 
+Projectors
+Define new projector
+call projector
+stor the state of a projection
+fetch the state of a projection
+subscriber tests are not isolate due to the fact that it is using task and waiting...
+save checkpoint
+
+
+register event subscriber
+register projectrors
+register idocument
+
+
+deduplicatior
+handling exception of a projection
+
+having a base class for projectors
+
+how to register and resolve projectors using an IoC
+
+Global position on an event in event stream
+
+Group subscrivers

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<EnablePreviewFeatures>true</EnablePreviewFeatures>
+		<Authors>Masoud Bahrami</Authors>
+		<Company>Quantum Space Fundation</Company>
+		<Version>0.0.1</Version>
+		<PackageProjectUrl>https://github.com/Quantum-Space-Org/Core</PackageProjectUrl>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentAssertions" Version="6.8.0" />
+		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EventSourcing\Quantum.EventSourcing.csproj" />
+	</ItemGroup>
+
+</Project>

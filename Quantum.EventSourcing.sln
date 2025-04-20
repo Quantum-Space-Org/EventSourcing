@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.UnitTests", "tests\Quantum.UnitTests\Quantum.UnitTests.csproj", "{569E516D-B7C5-40EC-9EFC-59AC0E58EA12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5074ECE4-CB41-4155-9202-1252A2E15654}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2011D3CD-8BB3-4E56-8282-DCC1042B3407}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventSourcing", "EventSourcing", "{71EE179E-7CBB-477E-8EA4-2E502E933A1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing", "src\Quantum.EventSourcing\EventSourcing\Quantum.EventSourcing.csproj", "{26F27D3E-0016-4F6D-800D-EB1CF1E5BEC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing.InMemoryEventStore", "src\Quantum.EventSourcing\InMemoryEventStore\Quantum.EventSourcing.InMemoryEventStore.csproj", "{28962283-62FB-4209-B819-6D263EEA20E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing.Test", "src\Quantum.EventSourcing\Test\Quantum.EventSourcing.Test.csproj", "{6877D587-2FC2-4CAD-859B-CADFD5AFC6DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing.SqlServerProjector", "src\Quantum.EventSourcing\SqlServerProjector\Quantum.EventSourcing.SqlServerProjector.csproj", "{DF761F38-18CF-49D3-BFDD-6C4B72609556}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing.SqlServerDocumentStore", "src\Quantum.EventSourcing\SqlServerDocumentStore\Quantum.EventSourcing.SqlServerDocumentStore.csproj", "{94D746B9-E906-4CDC-AEAB-B762DD9F83E9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing.EventStoreDB", "src\Quantum.EventSourcing\EventStorDB\Quantum.EventSourcing.EventStoreDB.csproj", "{9C8E7091-6B6A-41F3-AF35-D35D6062468B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.IntegrationTests", "tests\Quantum.IntegrationTests\Quantum.IntegrationTests.csproj", "{41511243-9761-4681-8495-946C9E3B1B31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09EB2FBF-5DE0-49CE-9D6B-ED6351A0A82F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing.Tests", "tests\Quantum.EventSourcing.Tests\Quantum.EventSourcing.Tests.csproj", "{DB95CB9B-8C72-46C9-B3F8-47F10318CB26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing.Versioning", "src\Quantum.EventSourcing\Versioning\Quantum.EventSourcing.Versioning.csproj", "{E7AE8FE6-A146-4B10-9473-991B1D21042F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quantum.EventSourcing.Enrichers", "src\Quantum.EventSourcing\Enrichers\Quantum.EventSourcing.Enrichers.csproj", "{7A7EA5D4-A92F-4576-913A-95169243FFC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{569E516D-B7C5-40EC-9EFC-59AC0E58EA12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569E516D-B7C5-40EC-9EFC-59AC0E58EA12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569E516D-B7C5-40EC-9EFC-59AC0E58EA12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569E516D-B7C5-40EC-9EFC-59AC0E58EA12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F27D3E-0016-4F6D-800D-EB1CF1E5BEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F27D3E-0016-4F6D-800D-EB1CF1E5BEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F27D3E-0016-4F6D-800D-EB1CF1E5BEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F27D3E-0016-4F6D-800D-EB1CF1E5BEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28962283-62FB-4209-B819-6D263EEA20E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28962283-62FB-4209-B819-6D263EEA20E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28962283-62FB-4209-B819-6D263EEA20E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28962283-62FB-4209-B819-6D263EEA20E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6877D587-2FC2-4CAD-859B-CADFD5AFC6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6877D587-2FC2-4CAD-859B-CADFD5AFC6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6877D587-2FC2-4CAD-859B-CADFD5AFC6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6877D587-2FC2-4CAD-859B-CADFD5AFC6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF761F38-18CF-49D3-BFDD-6C4B72609556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF761F38-18CF-49D3-BFDD-6C4B72609556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF761F38-18CF-49D3-BFDD-6C4B72609556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF761F38-18CF-49D3-BFDD-6C4B72609556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94D746B9-E906-4CDC-AEAB-B762DD9F83E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D746B9-E906-4CDC-AEAB-B762DD9F83E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D746B9-E906-4CDC-AEAB-B762DD9F83E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D746B9-E906-4CDC-AEAB-B762DD9F83E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C8E7091-6B6A-41F3-AF35-D35D6062468B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8E7091-6B6A-41F3-AF35-D35D6062468B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8E7091-6B6A-41F3-AF35-D35D6062468B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8E7091-6B6A-41F3-AF35-D35D6062468B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41511243-9761-4681-8495-946C9E3B1B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41511243-9761-4681-8495-946C9E3B1B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41511243-9761-4681-8495-946C9E3B1B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41511243-9761-4681-8495-946C9E3B1B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB95CB9B-8C72-46C9-B3F8-47F10318CB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB95CB9B-8C72-46C9-B3F8-47F10318CB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB95CB9B-8C72-46C9-B3F8-47F10318CB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB95CB9B-8C72-46C9-B3F8-47F10318CB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7AE8FE6-A146-4B10-9473-991B1D21042F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7AE8FE6-A146-4B10-9473-991B1D21042F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7AE8FE6-A146-4B10-9473-991B1D21042F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7AE8FE6-A146-4B10-9473-991B1D21042F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7EA5D4-A92F-4576-913A-95169243FFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7EA5D4-A92F-4576-913A-95169243FFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7EA5D4-A92F-4576-913A-95169243FFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7EA5D4-A92F-4576-913A-95169243FFC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{569E516D-B7C5-40EC-9EFC-59AC0E58EA12} = {2011D3CD-8BB3-4E56-8282-DCC1042B3407}
+		{71EE179E-7CBB-477E-8EA4-2E502E933A1F} = {5074ECE4-CB41-4155-9202-1252A2E15654}
+		{26F27D3E-0016-4F6D-800D-EB1CF1E5BEC7} = {71EE179E-7CBB-477E-8EA4-2E502E933A1F}
+		{28962283-62FB-4209-B819-6D263EEA20E7} = {71EE179E-7CBB-477E-8EA4-2E502E933A1F}
+		{6877D587-2FC2-4CAD-859B-CADFD5AFC6DF} = {71EE179E-7CBB-477E-8EA4-2E502E933A1F}
+		{DF761F38-18CF-49D3-BFDD-6C4B72609556} = {71EE179E-7CBB-477E-8EA4-2E502E933A1F}
+		{94D746B9-E906-4CDC-AEAB-B762DD9F83E9} = {71EE179E-7CBB-477E-8EA4-2E502E933A1F}
+		{9C8E7091-6B6A-41F3-AF35-D35D6062468B} = {71EE179E-7CBB-477E-8EA4-2E502E933A1F}
+		{41511243-9761-4681-8495-946C9E3B1B31} = {2011D3CD-8BB3-4E56-8282-DCC1042B3407}
+		{DB95CB9B-8C72-46C9-B3F8-47F10318CB26} = {2011D3CD-8BB3-4E56-8282-DCC1042B3407}
+		{E7AE8FE6-A146-4B10-9473-991B1D21042F} = {71EE179E-7CBB-477E-8EA4-2E502E933A1F}
+		{7A7EA5D4-A92F-4576-913A-95169243FFC5} = {71EE179E-7CBB-477E-8EA4-2E502E933A1F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CE69326-D13A-4A9B-974F-50FB4C5203BA}
+	EndGlobalSection
+EndGlobal

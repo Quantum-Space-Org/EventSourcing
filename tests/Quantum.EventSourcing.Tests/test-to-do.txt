@@ -1,0 +1,31 @@
+﻿// handle MovedToEvent in EventStoreDB
+// Add MigratedFrom event to the start of
+
+// Copy-Transform 
+
+// StreamMovedTo  Event
+// transform events
+// transform event before appending to event store
+// transform event before projecting
+// re-hydrate a projector
+// re-hydrate an event stream 
+// track a simple use case 
+// track a use case spans between multiple contexts
+// add overload to AppendEvent with stream id as string type
+// snapshot an event stream
+
+
+
+// Copy-replace
+// - Simple copy-replace
+// - In place copy-replace (Truncate before or update the start pointer of the stream)
+//  - with transformation
+
+// Split Streams
+// Join Stream
+// use ExpectedVersion
+
+// Use links feature of EventStoreDB
+// Two Aggregates, One Stream
+// One Aggregate, Two Streams
+// Versioning Bankrupty
