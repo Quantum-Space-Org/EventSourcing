@@ -41,7 +41,7 @@ jobs:
           fi
 
       - name: 🔄 Restore dependencies
-        run: dotnet restore Quantum.Database.sln
+        run: dotnet restore Quantum.EventSourcing.sln
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
