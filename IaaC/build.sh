@@ -8,7 +8,7 @@ OUTPUT_DIR="./build"
  
 echo "🔄 Restoring dependencies..."
 dotnet restore Quantum.EventSourcing.sln
-
+ 
 echo "🔨 Building solution in $(pwd) ..."
 dotnet build Quantum.EventSourcing.sln --configuration $CONFIG
 
