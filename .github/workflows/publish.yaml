@@ -54,7 +54,7 @@ jobs:
           echo "Restoring: $SOLUTION_FILE"
           dotnet restore "$SOLUTION_FILE"
         env:
-          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
 
       - name: 🔨 Build the project
         run: |
@@ -66,7 +66,7 @@ jobs:
             dotnet build "$SOLUTION_FILE" --configuration Release --no-restore
           fi
         env:
-          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
 
       - name: 🚀 Publish packages to GitHub Packages
         run: |
@@ -78,6 +78,7 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
 
       - name: ✅ Done
         run: echo "🎉 Package published from tag ${{ github.ref_name }}!"
