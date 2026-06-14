@@ -43,18 +43,18 @@ jobs:
       - name: 🔄 Restore dependencies
         run: dotnet restore Quantum.Database.sln
         env:
-          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
 
       - name: 🔨 Build the project
         run: bash IaaC/build.sh
         env:
-          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
 
       - name: 🚀 Publish packages
         run: bash IaaC/publish.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
 
       - name: ✅ Done
         run: echo "🎉 Package published from tag!"
